@@ -403,11 +403,11 @@ video {
     footer p {
         font-size: 12px; /* Réduit la taille du texte du footer */
     }
-
-    /* Masquer les images sur les petits écrans (mobiles) */
     .right-image, .right-image2, .right-image3, .right-image4 {
-        display: none; /* Masque les images */
+        display: none !important; /* Ajout du !important pour garantir l'application */
     }
+}
+
 }
 
 /* Media Queries pour les écrans de taille moyenne (tablettes) */
