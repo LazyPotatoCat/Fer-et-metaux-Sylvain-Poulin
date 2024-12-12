@@ -364,6 +364,7 @@ video {
     height: auto;
 }
 /* Media Queries pour les petits écrans (mobiles) */
+/* Media Queries pour les petits écrans (mobiles) */
 @media (max-width: 480px) {
     body {
         font-size: 14px; /* Réduit la taille globale du texte */
@@ -399,14 +400,14 @@ video {
         font-size: 14px; /* Réduit la taille du texte principal */
     }
 
-    .right-image, .right-image2, .right-image3, .right-image4 {
-        display: none; /* Masque les images */
-    }
-
     footer p {
         font-size: 12px; /* Réduit la taille du texte du footer */
     }
 
+    /* Masquer les images sur les petits écrans (mobiles) */
+    .right-image, .right-image2, .right-image3, .right-image4 {
+        display: none; /* Masque les images */
+    }
 }
 
 /* Media Queries pour les écrans de taille moyenne (tablettes) */
@@ -432,3 +433,4 @@ video {
         height: 250px;
     }
 }
+
