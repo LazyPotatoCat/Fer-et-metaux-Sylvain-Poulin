@@ -363,39 +363,59 @@ video {
     max-width: 100%;
     height: auto;
 }
-/* Media Queries pour les écrans moyens (tablettes) */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        height: auto;
+/* Media Queries pour les petits écrans (mobiles) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Réduit la taille globale du texte */
+    }
+
+    header h1 {
+        font-size: 28px; /* Réduit la taille du titre */
     }
 
     nav ul {
         flex-direction: column;
-        margin-top: 10px;
+        align-items: center;
     }
 
-    .field-group {
-        flex-direction: column;
+    nav a {
+        padding: 8px 15px;
     }
 
-    .field {
-        margin-right: 0;
-        margin-bottom: 10px;
+    .section-link {
+        font-size: 20px;
     }
 
-    h1 {
-        font-size: 40px;
+    main {
+        padding: 10px;
+        margin: 10px;
     }
 
-    form {
-        width: 100%;
+    main h1 {
+        font-size: 24px; /* Réduit la taille des titres dans le contenu */
+    }
+
+    main p {
+        font-size: 14px; /* Réduit la taille du texte principal */
+    }
+
+    .right-image, .right-image2, .right-image3, .right-image4 {
+        width: 180px; /* Réduit la taille des images */
+        height: 180px;
+    }
+
+    footer p {
+        font-size: 12px; /* Réduit la taille du texte du footer */
     }
 }
 
-/* Media Queries pour les petits écrans (mobiles) */
-@media (max-width: 480px) {
-    h1 {
+/* Media Queries pour les écrans de taille moyenne (tablettes) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Légèrement plus grand que pour les petits écrans */
+    }
+
+    header h1 {
         font-size: 32px;
     }
 
@@ -403,36 +423,12 @@ video {
         font-size: 28px;
     }
 
-    .special-paragraph {
-        font-size: 20px;
+    main p {
+        font-size: 16px;
     }
 
-    .image-container img {
-        width: 100%;
-        height: auto;
-        max-width: 200px;
+    .right-image, .right-image2, .right-image3, .right-image4 {
+        width: 250px;
+        height: 250px;
     }
-
-    .contact-info {
-       width: 100%;
-        font-size: 18px;
-        height: auto;
-        padding: 10px;
-    }
-
-    .field-group {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    form {
-        width: 100%;
-    }
-
-    header {
-        padding: 15px;
-    }
-    section p {
-    font-size: 14px;
-}
 }
