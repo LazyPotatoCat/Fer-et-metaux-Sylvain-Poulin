@@ -363,6 +363,7 @@ video {
     max-width: 100%;
     height: auto;
 }
+/* Media Queries pour les écrans moyens (tablettes) */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -380,7 +381,7 @@ video {
 
     .field {
         margin-right: 0;
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
     }
 
     h1 {
@@ -392,6 +393,7 @@ video {
     }
 }
 
+/* Media Queries pour les petits écrans (mobiles) */
 @media (max-width: 480px) {
     h1 {
         font-size: 32px;
@@ -404,13 +406,27 @@ video {
     .special-paragraph {
         font-size: 20px;
     }
-}
-   
-    li {
-    line-height: 1.6; 
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: left;
-    max-width: 800px;
+
+    .image-container img {
+        width: 200px;
+        height: 200px;
     }
+
+    .contact-info {
+        width: 100%;
+        font-size: 24px;
+        height: auto;
+    }
+
+    .field-group {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
