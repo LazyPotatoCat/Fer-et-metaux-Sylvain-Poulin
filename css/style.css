@@ -389,7 +389,7 @@ video {
     }
 
     form {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -408,18 +408,21 @@ video {
     }
 
     .image-container img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height: auto;
+        max-width: 200px;
     }
 
     .contact-info {
-        width: 100%;
-        font-size: 24px;
+       width: 100%;
+        font-size: 18px;
         height: auto;
+        padding: 10px;
     }
 
     .field-group {
         flex-direction: column;
+        gap: 10px;
     }
 
     form {
@@ -429,4 +432,7 @@ video {
     header {
         padding: 15px;
     }
+    section p {
+    font-size: 14px;
+}
 }
