@@ -365,6 +365,7 @@ video {
 }
 /* Media Queries pour les petits écrans (mobiles) */
 @media (max-width: 480px) {
+    /* Cacher les images en mode portrait et paysage pour les petits écrans */
     .right-image, .right-image2, .right-image3, .right-image4 {
         display: none !important;
     }
@@ -409,8 +410,8 @@ video {
 }
 
 /* Media Queries pour l'orientation paysage */
-@media (orientation: landscape) {
-    /* Masque les images en mode paysage */
+@media (max-width: 768px) and (orientation: landscape) {
+    /* Masque les images uniquement en mode paysage pour les petits écrans */
     .right-image, .right-image2, .right-image3, .right-image4 {
         display: none !important;
     }
@@ -453,6 +454,15 @@ video {
         font-size: 12px;
     }
 }
+
+/* Pour les écrans plus larges comme les ordinateurs */
+@media (min-width: 769px) {
+    /* Les images seront visibles sur les écrans plus larges (ordinateurs) */
+    .right-image, .right-image2, .right-image3, .right-image4 {
+        display: block !important; /* Affiche les images sur les ordinateurs */
+    }
+}
+
 
 /* Média Query pour les écrans de taille moyenne (tablettes) en mode paysage et portrait */
 @media (max-width: 768px) {
