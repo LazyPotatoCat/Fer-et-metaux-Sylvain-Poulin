@@ -395,6 +395,21 @@ video {
     form {
         width: 95%;
         margin: 0 auto;
+        .map-container iframe {
+            height: 120px; /* Encore plus petit pour les petits écrans */
+        }
+
+        .contact-info {
+            font-size: 11px; /* Encore plus petit sur les petits écrans */
+            width: 95%; /* Largeur maximale */
+        }
+        input[type="text"],
+        input[type="tel"] {
+            font-size: 11px; /* Réduire la taille du texte des champs */
+        }
+
+        input[type="submit"] {
+            font-size: 11px;
     }
 }
 
@@ -443,6 +458,8 @@ video {
     .right-image, .right-image2, .right-image3, .right-image4 {
         display: none !important;
     }
+
+    
 }
 
 @media (min-width: 769px) {
