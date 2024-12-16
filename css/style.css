@@ -478,19 +478,7 @@ video {
         font-size: 12px;
     }
 
-    .image-container {
-        width: 85%; /* Réduire légèrement la largeur pour mieux s'ajuster sur l'écran */
-        margin: 0 auto;
-        padding: 10px 0;
-        text-align: center;
-    }
-
-    .image-container img {
-        max-width: 100%;
-        height: auto;
-        margin-right: 0;
-    }
-
+   
     .image-container h3 {
         font-size: 18px;
     }
