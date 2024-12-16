@@ -411,9 +411,17 @@ video {
         font-size: 18px;
     }
 
+    .image-container {
+        width: 90%; /* Réduire la largeur de l'image-container */
+        margin: 0 auto; /* Centrer l'élément */
+        padding: 10px 0; /* Ajouter un peu de padding vertical */
+        text-align: center; /* Centrer le contenu à l'intérieur de l'image-container */
+    }
+
     .image-container img {
-        max-width: 200px;
-        margin-right: 10px;
+        max-width: 100%; /* Rendre les images responsive */
+        height: auto; /* Maintenir le ratio de l'image */
+        margin-right: 0; /* Supprimer la marge droite */
     }
 
     .image-container h3 {
@@ -470,9 +478,17 @@ video {
         font-size: 12px;
     }
 
+    .image-container {
+        width: 85%; /* Réduire légèrement la largeur pour mieux s'ajuster sur l'écran */
+        margin: 0 auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+
     .image-container img {
-        max-width: 200px;
-        margin-right: 10px;
+        max-width: 100%;
+        height: auto;
+        margin-right: 0;
     }
 
     .image-container h3 {
@@ -514,16 +530,22 @@ video {
         font-size: 16px;
     }
 
+     .image-container {
+        width: 70%; /* Réduire la taille du conteneur pour une meilleure lisibilité */
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
     .image-container img {
-        max-width: 200px;
-        margin-right: 10px;
+        max-width: 100%;
+        height: auto;
     }
 
     .image-container h3 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .image-container p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
