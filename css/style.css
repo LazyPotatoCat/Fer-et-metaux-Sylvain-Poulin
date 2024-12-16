@@ -364,19 +364,17 @@ video {
     height: auto;
 }
 /* Media Queries pour les petits écrans (mobiles) */
-/* Media Queries pour les petits écrans (mobiles) */
-/* Cacher les images quand l'écran est plus petit que 480px (portrait et paysage) */
 @media (max-width: 480px) {
     .right-image, .right-image2, .right-image3, .right-image4 {
-        display: none !important; /* Masque les images sur les petits écrans (portrait et paysage) */
+        display: none !important;
     }
 
     body {
-        font-size: 14px; /* Réduit la taille globale du texte */
+        font-size: 14px;
     }
 
     header h1 {
-        font-size: 28px; /* Réduit la taille du titre */
+        font-size: 28px;
     }
 
     nav ul {
@@ -398,15 +396,61 @@ video {
     }
 
     main h1 {
-        font-size: 24px; /* Réduit la taille des titres dans le contenu */
+        font-size: 24px;
     }
 
     main p {
-        font-size: 14px; /* Réduit la taille du texte principal */
+        font-size: 14px;
     }
 
     footer p {
-        font-size: 12px; /* Réduit la taille du texte du footer */
+        font-size: 12px;
+    }
+}
+
+/* Media Queries pour l'orientation paysage */
+@media (orientation: landscape) {
+    /* Masque les images en mode paysage */
+    .right-image, .right-image2, .right-image3, .right-image4 {
+        display: none !important;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Le menu passe horizontal en mode paysage */
+        align-items: center;
+    }
+
+    nav a {
+        padding: 8px 15px;
+    }
+
+    .section-link {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
     }
 }
 
