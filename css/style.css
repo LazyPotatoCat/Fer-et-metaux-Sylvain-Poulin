@@ -411,11 +411,12 @@ video {
         font-size: 18px;
     }
 
-    .image-container {
+     .image-container {
         width: 90%; /* Réduire la largeur de l'image-container */
         margin: 0 auto; /* Centrer l'élément */
         padding: 10px 0; /* Ajouter un peu de padding vertical */
         text-align: center; /* Centrer le contenu à l'intérieur de l'image-container */
+        order: -1; /* Placer l'image-container avant le texte */
     }
 
     .image-container img {
