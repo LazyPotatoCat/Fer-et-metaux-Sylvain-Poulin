@@ -395,21 +395,26 @@ video {
     form {
         width: 95%;
         margin: 0 auto;
-        .map-container iframe {
-            height: 120px; /* Encore plus petit pour les petits écrans */
-        }
+        
+       .map-container iframe {
+        height: 180px; /* Réduire la hauteur de la carte */
+        width: 100%;  /* Largeur à 100% pour s'adapter à l'écran */
+    }
 
-        .contact-info {
-            font-size: 11px; /* Encore plus petit sur les petits écrans */
-            width: 95%; /* Largeur maximale */
-        }
-        input[type="text"],
-        input[type="tel"] {
-            font-size: 11px; /* Réduire la taille du texte des champs */
-        }
+    /* Réduction de la taille des informations de contact */
+    .contact-info {
+        font-size: 12px; /* Réduire la taille du texte */
+        width: 95%; /* Largeur maximisée */
+    }
 
-        input[type="submit"] {
-            font-size: 11px;
+    /* Réduire la taille des champs du formulaire */
+    input[type="text"],
+    input[type="tel"] {
+        font-size: 12px;
+    }
+
+    input[type="submit"] {
+        font-size: 12px;
     }
 }
 
@@ -457,6 +462,18 @@ video {
     /* Cacher les images sur les petits écrans */
     .right-image, .right-image2, .right-image3, .right-image4 {
         display: none !important;
+    }
+    .map-container iframe {
+        height: 160px; /* Taille encore plus petite */
+    }
+
+    /* Réduction encore plus pour le formulaire et les infos de contact */
+    .contact-info {
+        font-size: 10px; /* Texte encore plus petit */
+    }
+
+    .field input {
+        font-size: 10px;
     }
 
     
