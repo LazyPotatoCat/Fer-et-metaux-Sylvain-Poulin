@@ -365,7 +365,12 @@ video {
 }
 /* Media Queries pour les petits écrans (mobiles) */
 /* Media Queries pour les petits écrans (mobiles) */
+/* Cacher les images quand l'écran est plus petit que 480px (portrait et paysage) */
 @media (max-width: 480px) {
+    .right-image, .right-image2, .right-image3, .right-image4 {
+        display: none !important; /* Masque les images sur les petits écrans (portrait et paysage) */
+    }
+
     body {
         font-size: 14px; /* Réduit la taille globale du texte */
     }
@@ -403,14 +408,14 @@ video {
     footer p {
         font-size: 12px; /* Réduit la taille du texte du footer */
     }
-    .right-image, .right-image2, .right-image3, .right-image4 {
-        display: none !important; /* Ajout du !important pour garantir l'application */
-    }
 }
 
-
-/* Media Queries pour les écrans de taille moyenne (tablettes) */
+/* Média Query pour les écrans de taille moyenne (tablettes) en mode paysage et portrait */
 @media (max-width: 768px) {
+    .right-image, .right-image2, .right-image3, .right-image4 {
+        display: none !important; /* Masque les images sur les petits écrans même en mode paysage */
+    }
+
     body {
         font-size: 16px; /* Légèrement plus grand que pour les petits écrans */
     }
@@ -432,4 +437,3 @@ video {
         height: 250px;
     }
 }
-
