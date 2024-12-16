@@ -365,10 +365,10 @@ video {
 
 @media (max-width: 768px) {
     header {
-       display: flex;  /* Ajout de display: flex */
+        display: flex;  /* Ajout de display: flex */
         flex-direction: column;
         height: auto;
-        align-items: center; 
+        align-items: center;
     }
 
     nav ul {
@@ -385,7 +385,7 @@ video {
 
     .field {
         margin-right: 0;
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
     }
 
     h1 {
@@ -410,9 +410,9 @@ video {
     .special-paragraph {
         font-size: 20px;
     }
-   
+
     li {
-        line-height: 1.6; 
+        line-height: 1.6;
         color: #ffffff;
         font-size: 18px;
         font-weight: bold;
@@ -437,22 +437,25 @@ video {
 
     .image-container p {
         font-size: 14px;
-         
+    }
+
+    /* Cacher les images sur les petits écrans */
     .right-image, .right-image2, .right-image3, .right-image4 {
         display: none !important;
-        
     }
 }
+
 @media (min-width: 769px) {
     /* Les images seront visibles sur les écrans plus larges */
     .right-image, .right-image2, .right-image3, .right-image4 {
         display: block !important; /* Afficher les images sur les écrans larges */
     }
+}
 
-    @media (max-width: 768px) and (orientation: landscape) {
-    /* Cacher les images .right-image uniquement en mode paysage sur petits écrans */
+/* Cacher les images en mode paysage sur petits écrans */
+@media (max-width: 768px) and (orientation: landscape) {
     .right-image, .right-image2, .right-image3, .right-image4 {
-        display: none !important;
+        display: none !important;  /* Cacher les images en paysage */
     }
 
     body {
@@ -492,6 +495,7 @@ video {
     footer p {
         font-size: 12px;
     }
+}
 
     
 
