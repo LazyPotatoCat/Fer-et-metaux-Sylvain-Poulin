@@ -22,27 +22,10 @@
         <h1>Bienvenue!</h1>
         <div class="video-container">
           <video id="maVideo" controls autoplay width="800">
-            <source src="image/mp4" type="video/mp4">
+            <source src="image/presentation.mp4" type="video/mp4">
             Votre navigateur ne supporte pas la balise vidéo.
           </video>
-        </div>
-        
-        <script>
-          const video = document.getElementById('maVideo');
-          video.addEventListener('loadedmetadata', function() {
-            video.currentTime = 4; 
-            video.play();        
-          });
-        
        
-          video.addEventListener('timeupdate', function() {
-            if (video.currentTime >= 41) {
-              video.pause(); 
-            }
-          });
-        </script>
-        
-        </div>
     </main>
     
     <footer>
