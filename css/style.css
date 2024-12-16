@@ -408,15 +408,6 @@ video {
     }
     main h3 {
         font-size: 18px;
-    .image-container img {
-        width: 80%;  /* Les images prennent toute la largeur */
-        height: 80%; /* Pour maintenir le ratio de l'image */
-    }
-
-    /* Ajustement des sections */
-    .image-container {
-        margin-bottom: 20px;
-    }
    
 }
 
