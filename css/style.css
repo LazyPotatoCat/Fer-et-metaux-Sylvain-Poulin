@@ -407,6 +407,18 @@ video {
     footer p {
         font-size: 12px;
     }
+    main h3 {
+        font-size: 18px;
+         .image-container img {
+        width: 100%;  /* Les images prennent toute la largeur */
+        height: auto; /* Pour maintenir le ratio de l'image */
+    }
+
+    /* Ajustement des sections */
+    .image-container {
+        margin-bottom: 20px;
+    }
+   
 }
 
 /* Media Queries pour l'orientation paysage */
