@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000000;
-
 }
 
 header {
@@ -141,6 +140,7 @@ footer {
     margin-right: 20px;
     transition: transform 0.3s ease;
 }
+
 .image-container img:hover {
     transform: scale(1.1);
 }
@@ -159,7 +159,6 @@ footer {
     line-height: 1.6;
     max-width: 600px;
 }
-
 
 form {
     background-color: #3d3c3cb7;
@@ -203,6 +202,7 @@ form input[type="tel"] {
     border-radius: 4px;
     font-size: 16px;
 }
+
 .short-input {
     width: 200px;
     padding: 10px;
@@ -282,7 +282,7 @@ footer p {
 .right-image {
     position: absolute;
     top: 610px;
-    right: 590px;
+    right: 625px;
     width: 400px;
     height: 350px;
     margin: 10px;
@@ -292,7 +292,7 @@ footer p {
     position: absolute;
     top: 610px;
     right: 0px;
-    width: 585px;
+    width: 600px;
     height: 350px;
     margin: 10px;
 }
@@ -300,15 +300,16 @@ footer p {
 .right-image3 {
     position: absolute;
     top: 200px;
-    right: 60px;
+    right: 50px;
     width: 400px;
     height: 400px;
     margin: 10px;
 }
+
 .right-image4 {
     position: absolute;
     top: 200px;
-    right: 500px;
+    right: 525px;
     width: 500px;
     height: 400px;
     margin: 10px;
@@ -350,7 +351,6 @@ footer p {
 .contact-info span {
     display: block;
     margin-bottom: 5px;
-    
 }
 
 .video-container {
@@ -362,152 +362,38 @@ video {
     max-width: 100%;
     height: auto;
 }
-/* Media Query pour les petits écrans (moins de 480px de large) */
-@media (max-width: 480px) {
-    /* Cacher les images .right-image uniquement sur les petits écrans (portrait et paysage) */
-    .right-image, .right-image2, .right-image3, .right-image4 {
-        display: none !important;
-    }
 
-    body {
-        font-size: 14px;
-    }
-
-    header h1 {
-        font-size: 28px;
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
     }
 
     nav ul {
         flex-direction: column;
-        align-items: center;
+        margin-top: 10px;
     }
 
-    nav a {
-        padding: 8px 15px;
+    .field-group {
+        flex-direction: column;
     }
 
-    .section-link {
-        font-size: 20px;
+    .field {
+        margin-right: 0;
+        margin-bottom: 10px; 
     }
 
-    main {
-        padding: 10px;
-        margin: 10px;
+    h1 {
+        font-size: 40px;
     }
 
-    main h1 {
-        font-size: 24px;
-    }
-
-    main p {
-        font-size: 14px;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
-
-    main h3 {
-        font-size: 18px;
-    }
-
-     .image-container {
-        width: 90%; /* Réduire la largeur de l'image-container */
-        margin: 0 auto; /* Centrer l'élément */
-        padding: 10px 0; /* Ajouter un peu de padding vertical */
-        text-align: center; /* Centrer le contenu à l'intérieur de l'image-container */
-        order: -1; /* Placer l'image-container avant le texte */
-    }
-
-    .image-container img {
-        max-width: 100%; /* Rendre les images responsive */
-        height: auto; /* Maintenir le ratio de l'image */
-        margin-right: 0; /* Supprimer la marge droite */
-    }
-
-    .image-container h3 {
-        font-size: 18px;
-    }
-
-    .image-container p {
-        font-size: 14px;
+    form {
+        width: 95%;
     }
 }
 
-/* Media Query pour l'orientation paysage (moins de 768px de large et en mode paysage) */
-@media (max-width: 768px) and (orientation: landscape) {
-    /* Cacher les images .right-image uniquement en mode paysage sur petits écrans */
-    .right-image, .right-image2, .right-image3, .right-image4 {
-        display: none !important;
-    }
-
-    body {
-        font-size: 14px;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    nav ul {
-        flex-direction: row; /* Menu horizontal en mode paysage */
-        align-items: center;
-    }
-
-    nav a {
-        padding: 8px 15px;
-    }
-
-    .section-link {
-        font-size: 20px;
-    }
-
-    main {
-        padding: 10px;
-        margin: 10px;
-    }
-
-    main h1 {
-        font-size: 24px;
-    }
-
-    main p {
-        font-size: 14px;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
-
-   
-    .image-container h3 {
-        font-size: 18px;
-    }
-
-    .image-container p {
-        font-size: 14px;
-    }
-}
-
-/* Pour les écrans plus larges, comme les ordinateurs (769px et plus) */
-@media (min-width: 769px) {
-    /* Les images seront visibles sur les écrans plus larges */
-    .right-image, .right-image2, .right-image3, .right-image4 {
-        display: block !important; /* Afficher les images sur les écrans larges */
-    }
-}
-
-/* Media Query pour les tablettes (768px et moins) - portrait ou paysage */
-@media (max-width: 768px) {
-    .right-image, .right-image2, .right-image3, .right-image4 {
-        display: none !important; /* Masquer les images sur tous les petits écrans */
-    }
-
-    body {
-        font-size: 16px; /* Taille de texte légèrement plus grande sur les tablettes */
-    }
-
-    header h1 {
+@media (max-width: 480px) {
+    h1 {
         font-size: 32px;
     }
 
@@ -515,19 +401,28 @@ video {
         font-size: 28px;
     }
 
-    main p {
-        font-size: 16px;
+    .special-paragraph {
+        font-size: 20px;
+    }
+   
+    li {
+        line-height: 1.6; 
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+        max-width: 800px;
     }
 
-     .image-container {
-        width: 70%; /* Réduire la taille du conteneur pour une meilleure lisibilité */
-        margin: 0 auto;
-        padding: 20px 0;
+    .image-container {
+        flex-direction: column;
+        text-align: center;
     }
 
     .image-container img {
-        max-width: 100%;
-        height: auto;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
     }
 
     .image-container h3 {
@@ -535,6 +430,6 @@ video {
     }
 
     .image-container p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
