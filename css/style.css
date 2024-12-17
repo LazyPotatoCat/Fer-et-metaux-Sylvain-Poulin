@@ -453,6 +453,9 @@ video {
     /* Réduction de la taille du texte des informations de contact */
     .contact-info {
         font-size: 10px;  /* Réduire encore plus la taille du texte */
+         width: 90%;
+        height: 180px;
+        
     }
 
     .field input {
