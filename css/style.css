@@ -420,23 +420,29 @@ video {
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 32px;
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
-
     main h1 {
         font-size: 28px;
+    }
+    .image-container {
+        margin-top: 20px;  /* Espacement au-dessus de l'image */
+        margin-bottom: 20px; /* Espacement en dessous de l'image */
+    }
+    .image-container img {
+        width: 180px;  /* Réduire la taille des images */
+        height: 180px;
     }
 
     li {
         font-size: 16px;  /* Réduire la taille du texte des éléments */
         line-height: 1.4; /* Réduire l'espacement des lignes */
         text-align: left;
-    }
-
-    .image-container img {
-        width: 180px;  /* Réduire la taille des images */
-        height: 180px;
     }
 
     /* Cacher les images sur les petits écrans */
