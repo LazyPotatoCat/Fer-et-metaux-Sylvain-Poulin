@@ -457,6 +457,7 @@ video {
         height: auto; /* Ajuster la hauteur automatiquement */
         padding: 15px;  /* Ajouter du padding pour plus d'espace */
         text-align: center; /* Centrer le texte */
+         margin-bottom: 15px;
     }
 
      form input[type="text"],
@@ -538,12 +539,16 @@ video {
         font-size: 14px;
         width: 100%;
         height: auto;
+         margin-bottom: 15px;
     }
 
      form input[type="text"],
     form input[type="tel"],
     form input[type="submit"] {
         font-size: 12px;
+        padding: 6px;
+        width: 100%;
+        margin-bottom: 10px;
     }
       form {
         display: block;  /* En mode paysage aussi, les éléments doivent s'afficher les uns sous les autres */
