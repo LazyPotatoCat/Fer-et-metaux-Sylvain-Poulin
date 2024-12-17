@@ -460,6 +460,8 @@ video {
 
     .field input {
         font-size: 10px;  /* Réduire la taille du texte dans les champs */
+        width: 90%;
+        height: 180px;
     }
 
     input[type="submit"] {
@@ -527,11 +529,15 @@ video {
     /* Ajuster la taille du texte et des éléments */
     .contact-info {
         font-size: 11px;
+        width: 90%;
+        height: 180px;
     }
 
     input[type="text"],
     input[type="tel"] {
         font-size: 11px;
+        width: 90%;
+        height: 180px;
     }
 
     input[type="submit"] {
