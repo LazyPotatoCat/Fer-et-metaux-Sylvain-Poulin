@@ -446,24 +446,33 @@ video {
 
     /* Ajustement de la taille de la carte pour les écrans de 480px et moins */
     .map-container iframe {
-        width: 90%;  /* Largeur à 90% pour les petits écrans */
+        width: 100%;  /* Largeur à 90% pour les petits écrans */
         height: 180px;  /* Réduire la hauteur pour mieux s'adapter */
     }
 
     /* Réduction de la taille du texte des informations de contact */
     .contact-info {
-        font-size: 14px;  /* Réduire encore plus la taille du texte */
-         width: 90%;
-        height: 180px;
-        
+       font-size: 14px;  /* Réduire encore plus la taille du texte */
+        width: 100%;  /* Largeur complète pour s'adapter à l'écran */
+        height: auto; /* Ajuster la hauteur automatiquement */
+        padding: 15px;  /* Ajouter du padding pour plus d'espace */
+        text-align: center; /* Centrer le texte */
     }
 
      form input[type="text"],
     form input[type="tel"],
     form input[type="submit"] {
-        font-size: 12px;
+       font-size: 12px;
         padding: 6px;
-        
+        width: 100%;  /* Champs de formulaire prennent toute la largeur */
+        margin-bottom: 10px;  /* Espacement entre les champs */
+    }
+    .map-container,
+    .contact-info,
+    form {
+        display: block;  /* Afficher chaque élément en bloc pour qu'ils soient empilés */
+        width: 100%; /* Largeur à 100% */
+        margin-bottom: 15px; /* Ajouter de l'espacement entre les éléments */
     }
 
     
@@ -527,14 +536,19 @@ video {
     /* Ajuster la taille du texte et des éléments */
     .contact-info {
         font-size: 14px;
-        width: 90%;
-        height: 180px;
+        width: 100%;
+        height: auto;
     }
 
      form input[type="text"],
     form input[type="tel"],
     form input[type="submit"] {
         font-size: 12px;
+    }
+      form {
+        display: block;  /* En mode paysage aussi, les éléments doivent s'afficher les uns sous les autres */
+        width: 100%;  /* Prendre toute la largeur de l'écran */
+        margin-bottom: 20px; /* Ajouter un espacement entre les éléments */
     }
 }
 
