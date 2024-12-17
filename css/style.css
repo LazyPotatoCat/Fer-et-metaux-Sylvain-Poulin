@@ -448,7 +448,6 @@ video {
     .map-container iframe {
         width: 100%;  /* Largeur à 90% pour les petits écrans */
         height: 180px;  /* Réduire la hauteur pour mieux s'adapter */
-        margin-bottom: 15px;
     }
 
     /* Réduction de la taille du texte des informations de contact */
@@ -460,10 +459,6 @@ video {
         margin-bottom: 15px; /* Espacement entre les sections */
         box-sizing: border-box; /* Assurer que le padding ne dépasse pas la largeur */
         height: auto;
-        form {
-        display: block;  /* Assurer que le formulaire est bien en disposition verticale */
-        width: 100%; /* Largeur à 100% pour occuper tout l'espace */
-    }
 
      form input[type="text"],
     form input[type="tel"],
@@ -539,7 +534,6 @@ video {
    .map-container iframe {
         width: 100%;  /* Largeur complète en mode paysage */
         height: 220px; /* Réduire encore la hauteur pour la vue paysage */
-       margin-bottom: 15px;
     }
 
     /* Ajuster la taille du texte et des éléments */
