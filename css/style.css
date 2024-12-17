@@ -427,7 +427,7 @@ video {
         justify-content: center;
         text-align: center;
     }
-    main h1 {
+    main h3 {
         font-size: 28px;
     }
     .image-container {
@@ -437,6 +437,10 @@ video {
     .image-container img {
         width: 180px;  /* Réduire la taille des images */
         height: 180px;
+    }
+     p {
+        font-size: 16px;
+        line-height: 1.4;
     }
 
     li {
