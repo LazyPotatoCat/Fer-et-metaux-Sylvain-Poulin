@@ -399,6 +399,7 @@ video {
        .map-container iframe {
         height: 180px; /* Réduire la hauteur de la carte */
         width: 100%;  /* Largeur à 100% pour s'adapter à l'écran */
+           border: 0;
     }
 
     /* Réduction de la taille des informations de contact */
@@ -427,54 +428,39 @@ video {
         font-size: 28px;
     }
 
-    .special-paragraph {
-        font-size: 20px;
-    }
-
     li {
-        line-height: 1.6;
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 16px;  /* Réduire la taille du texte des éléments */
+        line-height: 1.4; /* Réduire l'espacement des lignes */
         text-align: left;
-        max-width: 800px;
-    }
-
-    .image-container {
-        flex-direction: column;
-        text-align: center;
     }
 
     .image-container img {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 10px;
-    }
-
-    .image-container h3 {
-        font-size: 20px;
-    }
-
-    .image-container p {
-        font-size: 14px;
+        width: 180px;  /* Réduire la taille des images */
+        height: 180px;
     }
 
     /* Cacher les images sur les petits écrans */
     .right-image, .right-image2, .right-image3, .right-image4 {
         display: none !important;
     }
+
+    /* Ajustement de la taille de la carte pour les écrans de 480px et moins */
     .map-container iframe {
-        height: 160px; /* Taille encore plus petite */
-         width: 90%;
+        width: 90%;  /* Largeur à 90% pour les petits écrans */
+        height: 180px;  /* Réduire la hauteur pour mieux s'adapter */
     }
 
-    /* Réduction encore plus pour le formulaire et les infos de contact */
+    /* Réduction de la taille du texte des informations de contact */
     .contact-info {
-        font-size: 10px; /* Texte encore plus petit */
+        font-size: 10px;  /* Réduire encore plus la taille du texte */
     }
 
     .field input {
-        font-size: 10px;
+        font-size: 10px;  /* Réduire la taille du texte dans les champs */
+    }
+
+    input[type="submit"] {
+        font-size: 10px;  /* Réduire la taille du texte du bouton */
     }
 
     
@@ -530,10 +516,24 @@ video {
     footer p {
         font-size: 12px;
         }
-    .map-container iframe {
-        width: 100%; /* Largeur complète de l'écran */
-        height: 220px;
-        }
+   .map-container iframe {
+        width: 100%;  /* Largeur complète en mode paysage */
+        height: 220px; /* Réduire encore la hauteur pour la vue paysage */
+    }
+
+    /* Ajuster la taille du texte et des éléments */
+    .contact-info {
+        font-size: 11px;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        font-size: 11px;
+    }
+
+    input[type="submit"] {
+        font-size: 11px;
+    }
 }
 
     
