@@ -452,20 +452,18 @@ video {
 
     /* Réduction de la taille du texte des informations de contact */
     .contact-info {
-        font-size: 10px;  /* Réduire encore plus la taille du texte */
+        font-size: 14px;  /* Réduire encore plus la taille du texte */
          width: 90%;
         height: 180px;
         
     }
 
-    .field input {
-        font-size: 10px;  /* Réduire la taille du texte dans les champs */
-        width: 90%;
-        height: 180px;
-    }
-
-    input[type="submit"] {
-        font-size: 10px;  /* Réduire la taille du texte du bouton */
+     form input[type="text"],
+    form input[type="tel"],
+    form input[type="submit"] {
+        font-size: 12px;
+        padding: 6px;
+        
     }
 
     
@@ -528,20 +526,15 @@ video {
 
     /* Ajuster la taille du texte et des éléments */
     .contact-info {
-        font-size: 11px;
+        font-size: 14px;
         width: 90%;
         height: 180px;
     }
 
-    input[type="text"],
-    input[type="tel"] {
-        font-size: 11px;
-        width: 90%;
-        height: 180px;
-    }
-
-    input[type="submit"] {
-        font-size: 11px;
+     form input[type="text"],
+    form input[type="tel"],
+    form input[type="submit"] {
+        font-size: 12px;
     }
 }
 
