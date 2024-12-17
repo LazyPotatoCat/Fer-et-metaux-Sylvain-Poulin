@@ -452,13 +452,13 @@ video {
 
     /* Réduction de la taille du texte des informations de contact */
     .contact-info {
-       font-size: 14px;  /* Réduire encore plus la taille du texte */
+      font-size: 14px;  /* Réduire encore plus la taille du texte */
         width: 100%;  /* Largeur complète pour s'adapter à l'écran */
-        height: auto; /* Ajuster la hauteur automatiquement */
         padding: 15px;  /* Ajouter du padding pour plus d'espace */
         text-align: center; /* Centrer le texte */
-         margin-bottom: 15px;
-    }
+        margin-bottom: 15px; /* Espacement entre les sections */
+        box-sizing: border-box; /* Assurer que le padding ne dépasse pas la largeur */
+        height: auto; 
 
      form input[type="text"],
     form input[type="tel"],
@@ -467,6 +467,7 @@ video {
         padding: 6px;
         width: 100%;  /* Champs de formulaire prennent toute la largeur */
         margin-bottom: 10px;  /* Espacement entre les champs */
+      box-sizing: border-box;
     }
     .map-container,
     .contact-info,
@@ -540,6 +541,7 @@ video {
         width: 100%;
         height: auto;
          margin-bottom: 15px;
+         box-sizing: border-box;
     }
 
      form input[type="text"],
