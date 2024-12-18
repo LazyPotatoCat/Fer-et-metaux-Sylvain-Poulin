@@ -249,9 +249,7 @@ input[name="city"] {
         margin: 0;
         padding: 0;
         background-color: #000000;
-        min-height: 100vh; /* Assure que la hauteur minimale du body est égale à la hauteur de l'écran */
         display: flex;
-        flex-direction: column; /* Permet au contenu de s'empiler verticalement */
     }
 
     main {
@@ -413,6 +411,49 @@ input[name="city"] {
     .contact-info span {
         font-size: 14px;
     }
+
+     form {
+        background-color: #3d3c3cb7;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        width: 90%; /* Largeur ajustée pour les écrans plus petits */
+        max-width: 500px; /* Limite la largeur */
+        height: auto; /* La hauteur s'adapte au contenu */
+        max-height: 400px; /* Limite la hauteur du formulaire */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrage horizontal du formulaire */
+    }
+
+    form input[type="text"],
+    form input[type="tel"] {
+        width: calc(100% - 20px); /* Évite que le texte touche les bords */
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #e60f0f;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    form input[type="submit"] {
+        background-color: #db1212;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        width: 100%; /* Assure que le bouton couvre toute la largeur */
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #d80e0e;
+    }
+
 
     footer {
         font-size: 12px;
