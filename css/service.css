@@ -164,6 +164,23 @@ section p {
 
 
 @media (max-width: 480px) {
+    .image-container {
+        display: flex;
+        flex-direction: column; /* Empile les éléments verticalement */
+        align-items: center; /* Centre tous les éléments horizontalement */
+        justify-content: center; /* Centre verticalement */
+    }
+
+    .image-container img {
+        width: 150px; /* Ajuste la taille de l'image pour mobile */
+        height: 150px; /* Ajuste la taille de l'image pour mobile */
+        margin-bottom: 10px; /* Espace entre l'image et le texte */
+    }
+
+    .image-container h3,
+    .image-container p {
+        text-align: center; /* Centre le texte */
+    }
     header {
         flex-direction: column;
         height: auto;
