@@ -255,12 +255,6 @@ section p {
     main p {
         font-size: 12px;
     }
-
-    .video-container video {
-        width: 100%;
-        height: auto;
-    }
-
     footer {
         font-size: 12px;
         padding: 5px;
