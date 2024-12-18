@@ -276,6 +276,7 @@ input[name="city"] {
         max-width: 100%; /* Empêche de dépasser la largeur de l'écran */
         height: 200px; /* Ajuste la hauteur pour qu'elle soit proportionnée */
         border: 0; /* Supprime les bordures */
+        margin-top: 20px;
     }
 
     .contact-info {
@@ -295,7 +296,9 @@ input[name="city"] {
         height: auto; /* La hauteur s'adapte au contenu */
         max-height: 200px; /* Limite la hauteur maximale */
         overflow: hidden; /* Cache le contenu qui dépasse, si nécessaire */
-        z-index: 2; /* Mettre ce bloc au-dessus de la carte */
+        position: relative; /* Assurez-vous que z-index fonctionne */
+          z-index: 10;
+         margin-bottom: 10px; /* Crée un espace avec la carte */
     }
 
     .contact-info span {
