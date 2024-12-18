@@ -100,69 +100,120 @@ footer {
     display: flex;
     justify-content: center;
 }
+/* Portrait - Petits écrans */
 @media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
     main {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+        padding: 15px; /* Ajout de padding pour plus d'espace */
     }
+
     main h3 {
-        font-size: 28px;
+        font-size: 24px; /* Ajuste pour être lisible sur petit écran */
+        margin-bottom: 10px;
     }
-       p {
-          font-size: 16px;
-          line-height: 1.4;
-      }
-  
-      li {
-          font-size: 16px;  /* Réduire la taille du texte des éléments */
-          line-height: 1.4; /* Réduire l'espacement des lignes */
-          text-align: left;
-      }
-      
-  }
-  
-  /* Cacher les images en mode paysage sur petits écrans */
-  @media (max-width: 768px) and (orientation: landscape) {
-  
-      body {
-          font-size: 14px;
-      }
-  
-      header h1 {
-          font-size: 28px;
-      }
-  
-      nav ul {
-          flex-direction: row; /* Menu horizontal en mode paysage */
-          align-items: center;
-      }
-  
-      nav a {
-          padding: 8px 15px;
-      }
-  
-      .section-link {
-          font-size: 20px;
-      }
-  
-      main {
-          padding: 10px;
-          margin: 10px;
-      }
-  
-      main h1 {
-          font-size: 24px;
-      }
-  
-      main p {
-          font-size: 14px;
-      }
-  
-      footer p {
-          font-size: 12px;
-          }
-     
-  }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 10px 0;
+    }
+
+    li {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    header h1 {
+        font-size: 32px; /* Taille ajustée pour en-têtes */
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu vertical en portrait */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a {
+        display: block; /* Chaque lien sur une nouvelle ligne */
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+}
+
+/* Paysage - Petits écrans */
+@media (max-width: 768px) and (orientation: landscape) {
+    body {
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 28px; /* Taille légèrement réduite */
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Menu horizontal */
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 14px; /* Réduction pour plus de place */
+    }
+
+    .section-link {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    main {
+        padding: 10px; /* Réduction des marges pour optimiser l'espace */
+        margin: 10px;
+        text-align: left; /* Meilleur alignement en paysage */
+    }
+
+    main h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    main p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    li {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    footer p {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
