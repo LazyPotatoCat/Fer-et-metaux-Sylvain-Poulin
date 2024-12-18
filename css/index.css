@@ -103,117 +103,74 @@ footer {
 /* Portrait - Petits écrans */
 @media (max-width: 480px) {
     body {
-        font-size: 14px;
         margin: 0;
         padding: 0;
+        overflow-x: hidden; /* Empêche le débordement horizontal */
+        background-color: black; /* Uniformise le fond */
     }
 
-    main {
+    header {
+        position: relative;
+        text-align: center; /* Centre le contenu de l'en-tête */
+    }
+
+    header img {
+        width: 100%; /* L'image d'en-tête prend toute la largeur */
+        height: auto; /* Maintient les proportions */
+        display: block;
+    }
+
+    /* Menu ajusté */
+    nav {
+        position: absolute;
+        top: 10px; /* Ajuste la position du menu */
+        left: 50%;
+        transform: translateX(-50%);
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Menu vertical */
         align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 15px; /* Ajout de padding pour plus d'espace */
+        z-index: 10; /* S'assure que le menu est au-dessus de l'image */
     }
 
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 5px 0; /* Espacement entre les liens */
+        background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour lisibilité */
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+
+    /* Ajustement de la vidéo */
+    .video-container video {
+        width: 100%; /* Vidéo responsive */
+        height: auto; /* Maintient les proportions */
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Texte Bienvenue */
     main h3 {
-        font-size: 24px; /* Ajuste pour être lisible sur petit écran */
-        margin-bottom: 10px;
-    }
-
-    p {
-        font-size: 14px;
-        line-height: 1.5;
+        font-size: 20px; /* Ajuste la taille du titre */
+        color: white;
         margin: 10px 0;
-    }
-
-    li {
-        font-size: 14px;
-        line-height: 1.5;
-        text-align: left;
-        margin-bottom: 8px;
-    }
-
-    header h1 {
-        font-size: 32px; /* Taille ajustée pour en-têtes */
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    nav ul {
-        flex-direction: column; /* Menu vertical en portrait */
-        padding: 0;
-        margin: 0;
-    }
-
-    nav a {
-        display: block; /* Chaque lien sur une nouvelle ligne */
-        padding: 10px;
-        font-size: 16px;
         text-align: center;
     }
 
-    footer p {
-        font-size: 12px;
-        margin-top: 15px;
-    }
-}
-
-/* Paysage - Petits écrans */
-@media (max-width: 768px) and (orientation: landscape) {
-    body {
-        font-size: 13px;
-        margin: 0;
-        padding: 0;
-    }
-
-    header h1 {
-        font-size: 28px; /* Taille légèrement réduite */
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    nav ul {
-        flex-direction: row; /* Menu horizontal */
-        justify-content: center;
-        padding: 0;
-    }
-
-    nav a {
-        padding: 8px 10px;
-        font-size: 14px; /* Réduction pour plus de place */
-    }
-
-    .section-link {
-        font-size: 16px;
-        padding: 5px 10px;
-    }
-
-    main {
-        padding: 10px; /* Réduction des marges pour optimiser l'espace */
-        margin: 10px;
-        text-align: left; /* Meilleur alignement en paysage */
-    }
-
-    main h1 {
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
-
+    /* Texte "Recyclage de métaux" */
     main p {
-        font-size: 12px;
-        line-height: 1.4;
-    }
-
-    li {
-        font-size: 13px;
-        margin-bottom: 6px;
-    }
-
-    footer p {
-        font-size: 10px;
+        font-size: 14px;
         text-align: center;
-        margin-top: 10px;
+        color: white;
+        margin: 5px 10px; /* Espacement interne */
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 12px;
+        color: gray;
+        text-align: center;
+        margin: 20px 0;
     }
 }
