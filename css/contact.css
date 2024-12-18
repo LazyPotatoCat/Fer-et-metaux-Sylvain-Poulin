@@ -293,6 +293,7 @@ input[name="city"] {
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         margin-top: 20px; /* Ajout d'un espace au-dessus du formulaire */
+        margin-bottom: 30px;
     }
 
     .field-group {
