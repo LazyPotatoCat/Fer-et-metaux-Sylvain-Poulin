@@ -226,6 +226,7 @@ input[name="city"] {
 @media (max-width: 480px) {
     body {
         padding: 0 10px; /* Ajoute des marges à gauche et à droite pour ne pas avoir de contenu collé au bord */
+        margin:0
     }
 
     header {
@@ -267,12 +268,16 @@ input[name="city"] {
         font-size: 14px;
         line-height: 1.5;
     }
+      .map-container {
+        margin-bottom: 20px; /* Espace entre la carte et les autres sections */
+    }
 
     .contact-info {
-        font-size: 20px; /* Réduit la taille de la police pour les petits écrans */
+        font-size: 18px; /* Réduit la taille de la police pour les petits écrans */
         padding: 15px;
         width: 100%; /* Assure que la section occupe toute la largeur disponible */
         box-sizing: border-box;
+         margin-bottom: 20px;
     }
 
     .contact-info span {
@@ -281,9 +286,13 @@ input[name="city"] {
     }
 
     form {
-        padding: 20px;
+       padding: 20px;
         width: 100%;
         box-sizing: border-box;
+        background-color: #3d3c3cb7;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px; /* Ajout d'un espace au-dessus du formulaire */
     }
 
     .field-group {
@@ -334,6 +343,11 @@ input[name="city"] {
     header h1 {
         font-size: 28px;
     }
+    nav ul {
+        flex-direction: column; /* Menu horizontal en paysage */
+        justify-content: space-around;
+    }
+    
 
     main {
         padding: 20px;
