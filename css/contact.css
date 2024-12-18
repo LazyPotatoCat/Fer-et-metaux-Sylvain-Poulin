@@ -369,16 +369,25 @@ input[name="city"] {
         flex-direction: column;
         justify-content: space-around;
     }
-    body {
+     body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
     }
 
-    main {
-        padding: 10px;
-        margin: 10px auto;
+   main {
+        background-color: #000000;
+        padding: 20px;
+        margin: 0;
+        flex-grow: 1; /* Permet à main de prendre toute la place disponible et de faire défiler le contenu si nécessaire */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Assure que le contenu commence en haut */
     }
+
 
     main h1 {
         font-size: 24px;
@@ -389,7 +398,7 @@ input[name="city"] {
     }
 
     .map-container iframe {
-        width: 85%; /* Adapte la largeur de la carte à 85% de l'écran */
+        width: 90%; /* Adapte la largeur de la carte à 85% de l'écran */
         height: 200px; /* Ajuste la hauteur pour qu'elle soit proportionnée */
         border: 0; /* Supprime les bordures */
          z-index: 1; /* Place la carte en arrière-plan */
