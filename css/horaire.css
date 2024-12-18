@@ -162,11 +162,6 @@ footer p {
         font-size: 14px;
     }
 
-    .video-container video {
-        width: 100%; /* Ajuste la vidéo à la largeur du téléphone */
-        height: auto;
-    }
-
     footer {
         font-size: 12px;
     }
@@ -201,11 +196,6 @@ footer p {
 
     main p {
         font-size: 12px;
-    }
-
-    .video-container video {
-        width: 100%;
-        height: auto;
     }
 
     footer {
