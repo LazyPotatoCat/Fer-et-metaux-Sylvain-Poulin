@@ -100,4 +100,66 @@ footer {
     display: flex;
     justify-content: center;
 }
-
+@media (max-width: 480px) {
+    main {
+          position: relative; /* Nécessaire pour positionner les éléments enfants */
+      }
+      main h3 {
+          margin-top: 180px; /* Ajoute un espace pour ne pas chevaucher l'image */
+          text-align: center;
+      }
+       p {
+          font-size: 16px;
+          line-height: 1.4;
+      }
+  
+      li {
+          font-size: 16px;  /* Réduire la taille du texte des éléments */
+          line-height: 1.4; /* Réduire l'espacement des lignes */
+          text-align: left;
+      }
+      
+  }
+  
+  /* Cacher les images en mode paysage sur petits écrans */
+  @media (max-width: 768px) and (orientation: landscape) {
+  
+      body {
+          font-size: 14px;
+      }
+  
+      header h1 {
+          font-size: 28px;
+      }
+  
+      nav ul {
+          flex-direction: row; /* Menu horizontal en mode paysage */
+          align-items: center;
+      }
+  
+      nav a {
+          padding: 8px 15px;
+      }
+  
+      .section-link {
+          font-size: 20px;
+      }
+  
+      main {
+          padding: 10px;
+          margin: 10px;
+      }
+  
+      main h1 {
+          font-size: 24px;
+      }
+  
+      main p {
+          font-size: 14px;
+      }
+  
+      footer p {
+          font-size: 12px;
+          }
+     
+  }
