@@ -437,8 +437,8 @@ video {
         order: -1;
     }
     .image-container img {
-        width: 180px;  /* Réduire la taille des images */
-        height: 180px;
+       max-width: 100%; /* S'assure que l'image est bien contenue dans l'écran */
+    height: auto; /* Garde les proportions */
     }
      p {
         font-size: 16px;
