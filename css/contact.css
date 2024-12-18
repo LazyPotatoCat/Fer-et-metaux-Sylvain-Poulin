@@ -400,7 +400,7 @@ input[name="city"] {
       background-color: #222222; /* Fond sombre agréable */
         border: 1px solid #444444;
         border-radius: 8px;
-        padding: 16px; /* Plus d'espace autour du texte */
+        padding: 12px; /* Plus d'espace autour du texte */
         margin: 20px auto;
         color: #e0e0e0;
         font-family: Arial, sans-serif;
@@ -414,7 +414,7 @@ input[name="city"] {
         max-height
         position: relative;
          z-index: 10; /* Assurez-vous que ce bloc est prioritaire */
-         margin-bottom: 10px;
+         margin-bottom: 20px;
     }
 
     .contact-info span {
@@ -435,6 +435,8 @@ input[name="city"] {
         display: flex;
         flex-direction: column;
         align-items: center; /* Centrage horizontal du formulaire */
+         position: relative;
+        z-index: 20; /* S'assure que le formulaire passe devant */
     }
 
     form input[type="text"],
