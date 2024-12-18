@@ -420,25 +420,27 @@ video {
 }
 
 @media (max-width: 480px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+  main {
+        position: relative; /* Nécessaire pour positionner les éléments enfants */
+    }
+
+    .image-container {
+        position: absolute; /* Positionne l'image par rapport à son parent */
+        top: 0; /* Place l'image en haut */
+        left: 50%; /* Centre horizontalement */
+        transform: translateX(-50%); /* Ajuste pour un centrage parfait */
+        width: 100%; /* S'assure que l'image occupe toute la largeur si nécessaire */
         text-align: center;
     }
-    main h3 {
-        font-size: 28px;
-         margin-top: 10px;
-    }
-    .image-container {
-        margin-top: 20px;  /* Espacement au-dessus de l'image */
-        margin-bottom: 20px; /* Espacement en dessous de l'image */
-        order: -1;
-    }
+
     .image-container img {
-       max-width: 100%; /* S'assure que l'image est bien contenue dans l'écran */
-    height: auto; /* Garde les proportions */
+        max-width: 100%;
+        height: auto;
+    }
+
+    main h3 {
+        margin-top: 180px; /* Ajoute un espace pour ne pas chevaucher l'image */
+        text-align: center;
     }
      p {
         font-size: 16px;
