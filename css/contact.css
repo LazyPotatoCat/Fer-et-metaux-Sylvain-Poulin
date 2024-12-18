@@ -276,6 +276,9 @@ input[name="city"] {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ombre douce pour séparer le bloc du fond */
     width: 90%; /* Largeur adaptée à l'écran du téléphone */
     max-width: 500px; /* Limite la taille sur les écrans plus grands */
+    height: auto; /* Par défaut, la hauteur s'adapte au contenu */
+    max-height: 200px; /* Limite la hauteur maximale */
+    overflow: hidden; /* Cache le contenu qui dépasse, si nécessaire */
 
 }
 
