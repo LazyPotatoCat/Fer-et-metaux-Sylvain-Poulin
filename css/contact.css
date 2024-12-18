@@ -257,7 +257,7 @@ input[name="city"] {
         font-size: 14px;
     }
     .map-container iframe {
-    width: 50%; /* Adapte la largeur de la carte à 100% de l'écran */
+    width: 80%; /* Adapte la largeur de la carte à 100% de l'écran */
     max-width: 100%; /* Empêche de dépasser la largeur de l'écran */
     height: 300px; /* Ajuste la hauteur pour qu'elle soit proportionnée */
     border: 0; /* Supprime les bordures */
@@ -274,9 +274,9 @@ input[name="city"] {
     font-size: 16px; /* Taille de texte agréable */
     line-height: 1.5; /* Espacement entre les lignes */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ombre douce pour séparer le bloc du fond */
-    width: 80%; /* Largeur adaptée à l'écran du téléphone */
+    width: 85%; /* Largeur adaptée à l'écran du téléphone */
     max-width: 500px; /* Limite la taille sur les écrans plus grands */
-    heigt:80%
+    heigt:30%
 }
 
     .contact-info span {
