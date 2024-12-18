@@ -272,19 +272,33 @@ input[name="city"] {
         margin-bottom: 20px; /* Espace entre la carte et les autres sections */
     }
 
-    .contact-info {
-        font-size: 18px; /* Réduit la taille de la police pour les petits écrans */
-        padding: 15px;
-        width: 100%; /* Assure que la section occupe toute la largeur disponible */
-        box-sizing: border-box;
-         margin-bottom: 20px;
+     display: flex;
+        flex-direction: column; /* Les éléments s'empilent verticalement */
+        align-items: center; /* Centrer le contenu */
+        text-align: center; /* Texte centré */
+        padding: 15px; /* Ajout de marges internes */
+        margin: 20px 0; /* Espacement autour de la section */
+        background-color: #f9f9f9; /* Couleur de fond douce pour différencier */
+        border-radius: 8px; /* Bords arrondis pour un style moderne */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre pour relief */
+        width: 100%; /* Prendre toute la largeur disponible */
     }
 
     .contact-info span {
-        display: block;
-        margin-bottom: 10px;
+        display: block; /* Chaque élément sur une ligne distincte */
+        font-size: 16px; /* Ajuster la taille du texte */
+        margin-bottom: 10px; /* Espacement entre les lignes */
     }
 
+    .contact-info a {
+        margin-top: 10px; /* Espacement au-dessus du lien Facebook */
+        display: inline-block; /* Assure que le lien ne s'étire pas inutilement */
+    }
+
+    .facebook-icon {
+        max-width: 50px; /* Limiter la taille de l'icône Facebook */
+        height: auto; /* Préserver les proportions */
+    }
     form {
        padding: 20px;
         width: 100%;
