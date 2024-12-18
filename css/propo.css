@@ -121,7 +121,7 @@ footer {
 .right-image {
     position: absolute;
     top: 610px;
-    right: 650px;
+    right: 590px;
     width: 400px;
     height: 350px;
     margin: 10px;
@@ -131,7 +131,7 @@ footer {
     position: absolute;
     top: 610px;
     right: 0px;
-    width: 580px;
+    width: 550px;
     height: 350px;
     margin: 10px;
 }
@@ -148,7 +148,7 @@ footer {
 .right-image4 {
     position: absolute;
     top: 200px;
-    right: 550px;
+    right: 480px;
     width: 500px;
     height: 400px;
     margin: 10px;
