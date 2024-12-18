@@ -256,7 +256,12 @@ input[name="city"] {
     main p {
         font-size: 14px;
     }
-
+    .map-container iframe {
+    width: 100%; /* Adapte la largeur de la carte à 100% de l'écran */
+    max-width: 100%; /* Empêche de dépasser la largeur de l'écran */
+    height: 300px; /* Ajuste la hauteur pour qu'elle soit proportionnée */
+    border: 0; /* Supprime les bordures */
+}
     .contact-info {
         width: 100%;
         padding: 10px;
