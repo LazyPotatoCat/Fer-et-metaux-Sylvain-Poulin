@@ -214,6 +214,9 @@ footer p {
 
 /* Mode paysage (petits écrans < 768px) */
 @media (max-width: 768px) and (orientation: landscape) {
+    .right-image, .right-image2, .right-image3, .right-image4 {
+        display: none !important;  /* Cacher les images en paysage */
+    }
     header {
         flex-direction: row;
         height: auto;
@@ -252,9 +255,7 @@ footer p {
         font-size: 12px;
         padding: 5px;
     }
-    .right-image, .right-image2, .right-image3, .right-image4 {
-        display: none !important;
-    }
+    
 }
 @media (min-width: 769px) {
     /* Les images seront visibles sur les écrans plus larges */
