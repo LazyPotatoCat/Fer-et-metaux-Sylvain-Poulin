@@ -103,86 +103,87 @@ footer {
 /* Petits écrans en dessous de 480px (portrait) */
 @media (max-width: 480px) {
     header {
-        text-align: center;
-    }
-
-    header img {
-        width: 100%; /* Image en plein écran */
+        flex-direction: column;
         height: auto;
-        display: block;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column; /* Menu vertical */
-        align-items: center;
-        padding: 10px 0;
-    }
-
-    nav a {
-        display: block;
-        color: white;
-        text-decoration: none;
-        font-size: 14px;
-        padding: 8px;
-        background: rgba(0, 0, 0, 0.6);
-        margin: 5px 0;
-        border-radius: 5px;
-    }
-
-    main h1, main h3 {
-        font-size: 20px;
         text-align: center;
-        color: white;
-        margin: 10px;
+    }
+
+    header h1 {
+        font-size: 32px; /* Réduit la taille du titre */
+        padding: 5px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu vertical */
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+        margin: 0;
+    }
+
+    main h1 {
+        font-size: 28px;
     }
 
     main p {
         font-size: 14px;
-        line-height: 1.4;
-        text-align: center;
-        color: white;
     }
 
-    .video-container {
-        display: flex;
-        justify-content: center;
-        margin: 10px 0;
+    .video-container video {
+        width: 100%; /* Ajuste la vidéo à la largeur du téléphone */
+        height: auto;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Mode paysage (petits écrans < 768px) */
+@media (max-width: 768px) and (orientation: landscape) {
+    header {
+        flex-direction: row;
+        height: auto;
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Menu horizontal en paysage */
+        justify-content: space-around;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 12px;
     }
 
     .video-container video {
         width: 100%;
-        max-width: 350px; /* Limite la taille pour éviter un débordement */
         height: auto;
     }
 
-    footer p {
+    footer {
         font-size: 12px;
-        text-align: center;
-        color: gray;
-        margin: 10px 0;
-    }
-}
-
-/* Paysage et écrans jusqu'à 768px */
-@media (max-width: 768px) and (orientation: landscape) {
-    nav {
-        flex-direction: row; /* Menu horizontal */
-        justify-content: space-around;
         padding: 5px;
-    }
-
-    nav a {
-        font-size: 14px;
-        padding: 5px 8px;
-    }
-
-    main h1, main h3 {
-        font-size: 18px;
-    }
-
-    .video-container video {
-        width: 80%;
-        max-width: 400px;
     }
 }
