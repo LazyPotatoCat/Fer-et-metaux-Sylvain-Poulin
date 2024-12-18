@@ -285,11 +285,48 @@ input[name="city"] {
     .contact-info span {
         font-size: 14px;
     }
-
     form {
-        width: 100%;
-        padding: 10px;
-    }
+    background-color: #3d3c3cb7;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%; /* Largeur ajustée pour les écrans plus petits */
+    max-width: 500px; /* Limite la largeur */
+    height: auto; /* La hauteur s'adapte au contenu */
+    max-height: 400px; /* Limite la hauteur du formulaire */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrage horizontal du formulaire */
+}
+
+form input[type="text"],
+form input[type="tel"] {
+    width: calc(100% - 20px); /* Évite que le texte touche les bords */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e60f0f;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #db1212;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%; /* Assure que le bouton couvre toute la largeur */
+}
+
+form input[type="submit"]:hover {
+    background-color: #d80e0e;
+}
+
 
     footer {
         font-size: 12px;
@@ -332,14 +369,29 @@ input[name="city"] {
     height: 300px; /* Ajuste la hauteur pour qu'elle soit proportionnée */
     border: 0; /* Supprime les bordures */
 }
-    .contact-info {
-        width: 100%;
-        padding: 10px;
-    }
+  }
+   .contact-info {
+    background-color: #222222; /* Fond sombre agréable pour moins agresser les yeux */
+    border: 1px solid #444444; /* Bordure subtile */
+    border-radius: 8px; /* Coins arrondis pour un design plus doux */
+    padding: 10px; /* Espace autour du texte */
+    margin: 20px auto; /* Centrer et espacer le bloc */
+    color: #e0e0e0; /* Couleur de texte claire et lisible */
+    font-family: Arial, sans-serif; /* Police propre et moderne */
+    text-align: center; /* Texte centré */
+    font-size: 16px; /* Taille de texte agréable */
+    line-height: 1.5; /* Espacement entre les lignes */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ombre douce pour séparer le bloc du fond */
+    width: 90%; /* Largeur adaptée à l'écran du téléphone */
+    max-width: 500px; /* Limite la taille sur les écrans plus grands */
+    height: auto; /* Par défaut, la hauteur s'adapte au contenu */
+    max-height: 200px; /* Limite la hauteur maximale */
+    overflow: hidden; /* Cache le contenu qui dépasse, si nécessaire */
+
+}
 
     .contact-info span {
         font-size: 14px;
-    }
 
     footer {
         font-size: 12px;
