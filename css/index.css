@@ -160,7 +160,7 @@ footer {
     }
 
     nav ul {
-        flex-direction: row; /* Menu horizontal en paysage */
+        flex-direction: column; /* Menu horizontal en paysage */
         justify-content: space-around;
     }
 
