@@ -355,9 +355,9 @@ input[name="city"] {
 @media (max-width: 768px) and (orientation: landscape) {
     /* Ajustements pour mobile paysage */
      header {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
-        text-align: center;
+        padding: 5px;
     }
 
     header h1 {
