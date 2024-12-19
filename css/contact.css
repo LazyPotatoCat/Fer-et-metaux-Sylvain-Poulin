@@ -360,19 +360,14 @@ input[name="city"] {
         padding: 5px;
     }
 
-    header h1 {
-        font-size: 32px; /* Réduit la taille du titre */
+   header h1 {
+        font-size: 28px;
         padding: 5px;
     }
 
     nav ul {
-        flex-direction: column; /* Menu vertical */
-        padding: 0;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     body {
