@@ -494,12 +494,5 @@ input[name="city"] {
         padding: 15px; /* Réduire le padding pour plus d'espace */
     }
 
-    /* Réduire la taille des champs de saisie */
-    form input[type="text"],
-    form input[type="submit"] {
-        width: 100%; /* Champs couvrent toute la largeur */
-        padding: 14px; /* Réduire le padding pour rendre le champ plus compact */
-        font-size: 16px; /* Réduire la taille de la police */
-    }
 }
 
