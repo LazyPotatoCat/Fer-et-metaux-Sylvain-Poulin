@@ -494,7 +494,7 @@ input[name="city"] {
         padding: 15px; /* Réduire le padding pour plus d'espace */
     }
      form input[type="submit"] {
-        padding: 8px 15px; /* Padding réduit pour un bouton plus petit */
+        padding: 8px 13px; /* Padding réduit pour un bouton plus petit */
         font-size: 14px; /* Taille de la police du bouton réduite *
     }
 
