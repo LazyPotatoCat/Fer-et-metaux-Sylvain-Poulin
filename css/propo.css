@@ -254,7 +254,7 @@ footer p {
         display: block !important; /* Afficher les images sur les écrans larges */
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 1536px) {
     body {
         font-size: 14px;
 
