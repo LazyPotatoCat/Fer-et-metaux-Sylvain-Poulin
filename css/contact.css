@@ -547,6 +547,8 @@ input[name="city"] {
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     text-align: center;
+    z-index: 10;
+    margin-bottom: 10px;
 }
 
 form {
