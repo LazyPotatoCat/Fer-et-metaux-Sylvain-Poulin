@@ -254,3 +254,43 @@ footer p {
         display: block !important; /* Afficher les images sur les écrans larges */
     }
 }
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+
+.right-image {
+    position: absolute;
+    top: 610px;
+    right: 590px;
+    width: 350px;
+    height: 300px;
+    margin: 10px;
+}
+
+.right-image2 {
+    position: absolute;
+    top: 610px;
+    right: 0px;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+
+.right-image3 {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+}
+
+.right-image4 {
+    position: absolute;
+    top: 200px;
+    right: 480px;
+    width: 450px;
+    height: 350px;
+    margin: 10px;
+}
+    }
