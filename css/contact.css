@@ -489,17 +489,17 @@ input[name="city"] {
      .contact-info,
     form {
         width: 100%; /* Utiliser toute la largeur disponible */
-        max-width: 500px; /* Limiter la largeur maximale */
+        max-width: 600px; /* Limiter la largeur maximale */
         box-sizing: border-box;
-        padding: 10px; /* Réduire le padding pour plus d'espace */
+        padding: 15px; /* Réduire le padding pour plus d'espace */
     }
 
     /* Réduire la taille des champs de saisie */
     form input[type="text"],
     form input[type="submit"] {
         width: 100%; /* Champs couvrent toute la largeur */
-        padding: 8px; /* Réduire le padding pour rendre le champ plus compact */
-        font-size: 14px; /* Réduire la taille de la police */
+        padding: 14px; /* Réduire le padding pour rendre le champ plus compact */
+        font-size: 16px; /* Réduire la taille de la police */
     }
 }
 
