@@ -298,7 +298,7 @@ input[name="city"] {
         overflow: hidden; /* Cache le contenu qui dépasse, si nécessaire */
         position: relative; /* Assurez-vous que z-index fonctionne */
           z-index: 10;
-         margin-bottom: 10px; /* Crée un espace avec la carte */
+        
     }
 
     .contact-info span {
