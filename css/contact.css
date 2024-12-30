@@ -494,12 +494,8 @@ input[name="city"] {
         padding: 15px; /* Réduire le padding pour plus d'espace */
     }
      form input[type="submit"] {
-          width: auto; /* Largeur automatique pour s'adapter au texte */
         padding: 8px 15px; /* Padding réduit pour un bouton plus petit */
-        font-size: 14px; /* Taille de la police du bouton réduite */
-        height: 35px; /* Hauteur réduite pour le bouton */
-        margin-top: 10px; /* Espace au-dessus du bouton */
-        cursor: pointer; /* Curseur en forme de main pour l'interaction */
+        font-size: 14px; /* Taille de la police du bouton réduite *
     }
 
 }
