@@ -486,4 +486,20 @@ input[name="city"] {
         margin-bottom: 20px;
         border: none;
     }
+     .contact-info,
+    form {
+        width: 100%; /* Utiliser toute la largeur disponible */
+        max-width: 500px; /* Limiter la largeur maximale */
+        box-sizing: border-box;
+        padding: 10px; /* Réduire le padding pour plus d'espace */
+    }
+
+    /* Réduire la taille des champs de saisie */
+    form input[type="text"],
+    form input[type="submit"] {
+        width: 100%; /* Champs couvrent toute la largeur */
+        padding: 8px; /* Réduire le padding pour rendre le champ plus compact */
+        font-size: 14px; /* Réduire la taille de la police */
+    }
+}
 
