@@ -278,19 +278,19 @@ footer p {
 
 .right-image3 {
     position: absolute;
-    top: 200px;
+    top: 20px;
     right: 50px;
     width: 350px;
-    height: 350px;
+    height: 300px;
     margin: 10px;
 }
 
 .right-image4 {
     position: absolute;
     top: 200px;
-    right: 480px;
-    width: 450px;
-    height: 350px;
+    right: 500px;
+    width: 400px;
+    height: 300px;
     margin: 10px;
 }
     }
