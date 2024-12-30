@@ -261,9 +261,9 @@ footer p {
 .right-image {
     position: absolute;
     top: 610px;
-    right: 300px;
+    right: 325px;
     width: 300px;
-    height: 250px;
+    height: 300px;
     margin: 10px;
 }
 
@@ -271,17 +271,17 @@ footer p {
     position: absolute;
     top: 610px;
     right: 0px;
-    width: 450px;
-    height: 250px;
+    width: 350px;
+    height: 300px;
     margin: 10px;
 }
 
 .right-image3 {
     position: absolute;
     top: 200px;
-    right: 40px;
+    right: 30px;
     width: 300px;
-    height: 250px;
+    height: 300px;
     margin: 10px;
 }
 
@@ -290,7 +290,7 @@ footer p {
     top: 200px;
     right: 300px;
     width: 350px;
-    height: 250px;
+    height: 350px;
     margin: 10px;
 }
     }
