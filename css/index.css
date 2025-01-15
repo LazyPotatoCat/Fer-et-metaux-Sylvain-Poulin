@@ -197,18 +197,18 @@ footer {
     }
 
     .fb-widget {
-     width: 90%; /* Le widget prend 90% de la largeur de l'écran */
-        max-width: 300px; /* Limite la largeur maximale à 300px */
+     width: 100%; /* Le widget occupe toute la largeur */
+        max-width: 350px; /* Limite maximale pour éviter qu’il soit trop grand */
         margin: 0 auto; /* Centre le widget horizontalement */
+        overflow: hidden; /* Masque tout débordement */
+        padding: 0;
         box-shadow: none; /* Supprime les ombres */
-        border: none; /* Supprime les bordures */
-        padding: 0; /* Élimine les marges internes */
     }
     .fb-widget iframe {
-      width: 100%; /* Adapte l'iframe à la largeur du conteneur */
-        height: 300px; /* Ajuste la hauteur pour un affichage plus compact */
-        border-radius: 8px; /* Coins arrondis */
+      width: 100%; /* Adapte l’iframe à la largeur du conteneur */
+        height: 300px; /* Hauteur ajustée pour petits écrans */
         border: none; /* Supprime les bordures */
+        border-radius: 8px; /* Coins arrondis */
     }
     footer {
         font-size: 12px;
@@ -262,19 +262,19 @@ footer {
     }
 
     .fb-widget {
-         width: 80%; /* Le widget prend 80% de la largeur de l'écran */
-        max-width: 400px; /* Limite la largeur maximale à 400px */
+       width: 90%; /* Le widget occupe presque toute la largeur */
+        max-width: 450px; /* Limite maximale pour les tablettes */
         margin: 0 auto; /* Centre le widget horizontalement */
+        overflow: hidden; /* Masque tout débordement */
+        padding: 0;
         box-shadow: none; /* Supprime les ombres */
-        border: none; /* Supprime les bordures */
-        padding: 0; /* Élimine les marges internes */
     }
 
     .fb-widget iframe {
-         width: 100%; /* Adapte l'iframe à la largeur du conteneur */
-        height: 350px; /* Ajuste la hauteur pour un affichage plus compact */
-        border-radius: 8px; /* Coins arrondis */
+         width: 100%; /* Adapte l’iframe à la largeur du conteneur */
+        height: 350px; /* Hauteur ajustée pour les écrans en mode paysage */
         border: none; /* Supprime les bordures */
+        border-radius: 8px; /* Coins arrondis */
     }
 
     footer {
