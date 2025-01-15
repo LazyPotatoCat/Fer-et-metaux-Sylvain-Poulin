@@ -186,20 +186,19 @@ footer {
         align-items: center; /* Centre les éléments */
     }
 
+  .fb-widget {
+        display: none !important; /* Force le widget à être caché */
+    }
+
     .video-container {
-       .video-container {
         width: 100%; /* La vidéo prend toute la largeur disponible */
-        max-width: 100%; /* Éviter une largeur maximale qui limite la vidéo */
+        max-width: 100%; /* Pas de largeur maximale */
     }
 
     .video-container video {
-         width: 100%; /* La vidéo occupe toute la largeur du conteneur */
-        height: auto; /* Ajuste la hauteur en fonction de la largeur pour conserver le ratio d'aspect */
-        max-height: 400px; /* Limite la hauteur pour ne pas dépasser un certain espace */
-    }
-
-   .fb-widget {
-        display: none; /* Cache le widget Facebook en mode paysage */
+        width: 100%; /* La vidéo occupe toute la largeur */
+        height: auto; /* Conserve le ratio d'aspect */
+        max-height: 400px; /* Limite la hauteur */
     }
     footer {
         font-size: 12px;
