@@ -19,21 +19,48 @@
             </ul>
         </nav>
     </header>
-
+    
     <main>
         <h1>Bienvenue!</h1>
-        <div class="video-container">
-           <video id="maVideo" autoplay muted loop width="800">
-                <source src="image/presentation.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la balise vidéo.
-            </video>
-        </div>
-    </main>
+        
+        <!-- Section vidéo et Facebook côte à côte -->
+        <div class="main-content">
+            <!-- Section vidéo -->
+            <div class="video-container">
+                <video id="maVideo" autoplay muted loop width="800">
+                    <source src="image/presentation.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la balise vidéo.
+                </video>
+            </div>
 
+            <!-- Section Facebook avec iframe -->
+            <div class="fb-widget">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100063481766633&tabs=timeline&width=500&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true" 
+                        width="500" 
+                        height="800" 
+                        style="border:none; overflow:hidden; border-radius:8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);" 
+                        scrolling="no" 
+                        frameborder="0" 
+                        allowTransparency="true">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Message pour les navigateurs sans JS -->
+        <noscript>
+            <p>Veuillez activer JavaScript pour afficher le contenu de Facebook. 
+                <a href="https://www.facebook.com/profile.php?id=100063481766633">
+                    Accédez à notre page Facebook ici.
+                </a>
+            </p>
+        </noscript>
+    </main>
+    
     <footer>
         <p>&copy; 2024 Fer et métaux Sylvain Poulin</p>
     </footer>
 </body>
 </html>
+
 
 
