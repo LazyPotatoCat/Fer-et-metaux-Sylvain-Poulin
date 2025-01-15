@@ -196,17 +196,17 @@ footer {
         max-height: 200px; /* Limite la hauteur pour petits écrans */
     }
 
-    .fb-widget {
-     width: 100%; /* Le widget occupe toute la largeur */
-        max-width: 350px; /* Limite maximale pour éviter qu’il soit trop grand */
+   .fb-widget {
+        width: 100%; /* Le widget occupe toute la largeur */
+        max-width: 300px; /* Limite maximale à 300px */
         margin: 0 auto; /* Centre le widget horizontalement */
-        overflow: hidden; /* Masque tout débordement */
+        overflow: hidden; /* Masque les débordements */
         padding: 0;
-        box-shadow: none; /* Supprime les ombres */
     }
+
     .fb-widget iframe {
-      width: 100%; /* Adapte l’iframe à la largeur du conteneur */
-        height: 300px; /* Hauteur ajustée pour petits écrans */
+        width: 100%; /* Adapte l'iframe à la largeur du conteneur */
+        height: 300px; /* Réduit la hauteur pour un affichage plus compact */
         border: none; /* Supprime les bordures */
         border-radius: 8px; /* Coins arrondis */
     }
@@ -262,17 +262,16 @@ footer {
     }
 
     .fb-widget {
-       width: 90%; /* Le widget occupe presque toute la largeur */
-        max-width: 450px; /* Limite maximale pour les tablettes */
+        width: 90%; /* Le widget occupe 90% de la largeur */
+        max-width: 400px; /* Limite maximale à 400px */
         margin: 0 auto; /* Centre le widget horizontalement */
-        overflow: hidden; /* Masque tout débordement */
+        overflow: hidden; /* Masque les débordements */
         padding: 0;
-        box-shadow: none; /* Supprime les ombres */
     }
 
     .fb-widget iframe {
-         width: 100%; /* Adapte l’iframe à la largeur du conteneur */
-        height: 350px; /* Hauteur ajustée pour les écrans en mode paysage */
+        width: 100%; /* Adapte l'iframe à la largeur du conteneur */
+        height: 350px; /* Réduit la hauteur pour les écrans en mode paysage */
         border: none; /* Supprime les bordures */
         border-radius: 8px; /* Coins arrondis */
     }
