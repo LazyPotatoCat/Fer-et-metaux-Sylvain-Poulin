@@ -58,12 +58,17 @@ nav a {
 nav a:hover {
     background: #000000;
 }
+
 main {
     background-color: #000000;
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox pour organiser les éléments */
+    flex-direction: column; /* Empile les éléments verticalement */
+    gap: 20px; /* Espace entre les sections */
+    align-items: center; /* Centre les éléments horizontalement */
 }
 
 main h1 {
@@ -79,6 +84,7 @@ main p {
     line-height: 1.5;
     color: #ffffff;
 }
+
 .section-link {
     text-decoration: none;
     color: inherit;
@@ -96,11 +102,49 @@ footer {
     width: 100%;
 }
 
-.video-container {
+/* Conteneur principal pour la vidéo et le widget Facebook */
+.main-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%; /* Pour occuper toute la largeur */
+    flex-wrap: wrap; /* Permet de faire passer les éléments à la ligne si l'espace est trop petit */
+    align-items: flex-start; /* Alignement en haut */
 }
-/* Petits écrans en dessous de 480px (portrait) */
+
+/* Section vidéo */
+.video-container {
+    flex: 2; /* La vidéo occupe plus d'espace (2 fois plus que le widget Facebook) */
+    max-width: 60%; /* Limite la largeur à 60% */
+    text-align: center; /* Centre le contenu textuel */
+}
+
+.video-container video {
+    width: 100%; /* La vidéo s'adapte à la largeur du conteneur */
+    max-height: 600px; /* Augmenter la hauteur de la vidéo */
+    border: 2px solid #fff; /* Bordure blanche */
+}
+
+/* Section widget Facebook */
+.fb-widget {
+    flex: 1; /* Le widget Facebook occupe une colonne */
+    max-width: 35%; /* Limite la largeur à 35% pour qu'il soit plus large */
+    text-align: center; /* Centre le widget */
+    padding: 10px;
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ombre */
+    margin: 0; /* Enlever toute marge pour ajuster le widget correctement */
+    background-color: transparent; /* Retirer le fond */
+    /* Supprimer la bordure autour du widget */
+}
+
+.fb-widget iframe {
+    border: 2px solid #fff; /* Ajouter une bordure blanche autour du widget */
+    width: 100%; /* S'adapte à la largeur du conteneur */
+    height: 700px; /* Augmenter la hauteur pour afficher plus de publications */
+    border-radius: 8px; /* Coins arrondis pour l'iframe */
+    max-width: 100%; /* Permet de redimensionner à 100% de la largeur */
+}
 @media (max-width: 480px) {
     header {
         flex-direction: column;
