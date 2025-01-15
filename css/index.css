@@ -199,7 +199,7 @@ footer {
 
     .fb-widget iframe {
         width: 100%; /* Adapte l'iframe à la largeur du conteneur */
-        height: 400px; /* Ajuste la hauteur pour l'affichage en mobile */
+        height: 200px; /* Ajuste la hauteur pour l'affichage en mobile */
         border: none; /* Supprime les bordures */
         border-radius: 8px; /* Coins arrondis pour un design moderne */
     }
@@ -257,7 +257,7 @@ footer {
 
     .fb-widget iframe {
         width: 100%; /* Adapte l'iframe à la largeur du conteneur */
-        height: 400px; /* Ajuste la hauteur pour l'affichage en mobile */
+        height: 200px; /* Ajuste la hauteur pour l'affichage en mobile */
         border: none; /* Supprime les bordures */
         border-radius: 8px; /* Coins arrondis pour un design moderne */
     }
