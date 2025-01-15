@@ -193,22 +193,22 @@ footer {
     .video-container video {
         width: 100%;
         height: auto; /* Conserve les proportions */
-        max-height: 300px; /* Limite la hauteur pour petits écrans */
+        max-height: 200px; /* Limite la hauteur pour petits écrans */
     }
 
     .fb-widget {
-        width: 90%; /* Le widget prend toute la largeur disponible */
-        max-width: 100%; /* Ne dépasse pas les limites de l'écran */
-        padding: 0;
+     width: 90%; /* Le widget prend 90% de la largeur de l'écran */
+        max-width: 300px; /* Limite la largeur maximale à 300px */
         margin: 0 auto; /* Centre le widget horizontalement */
-        box-shadow: none; /* Supprime les ombres pour un design minimaliste */
+        box-shadow: none; /* Supprime les ombres */
         border: none; /* Supprime les bordures */
+        padding: 0; /* Élimine les marges internes */
     }
-
     .fb-widget iframe {
-        width: 90%; /* Adapte l'iframe à la largeur du conteneur */
-        height: 400px; /* Ajuste la hauteur pour un bon affichage */
+      width: 100%; /* Adapte l'iframe à la largeur du conteneur */
+        height: 300px; /* Ajuste la hauteur pour un affichage plus compact */
         border-radius: 8px; /* Coins arrondis */
+        border: none; /* Supprime les bordures */
     }
     footer {
         font-size: 12px;
@@ -256,24 +256,25 @@ footer {
     }
 
     .video-container video {
-        width: 100%;
-        height: auto; /* Conserve les proportions */
-        max-height: 400px; /* Limite la hauteur pour éviter un débordement */
+      width: 100%; /* S'adapte à la largeur de l'écran */
+        height: auto; /* Conserve le ratio d'aspect */
+        max-height: 300px; /* Limite la hauteur de la vidéo */
     }
 
     .fb-widget {
-        width: 90%; /* Le widget prend toute la largeur disponible */
-        max-width: 100%; /* Ne dépasse pas les limites de l'écran */
-        padding: 0;
+         width: 80%; /* Le widget prend 80% de la largeur de l'écran */
+        max-width: 400px; /* Limite la largeur maximale à 400px */
         margin: 0 auto; /* Centre le widget horizontalement */
         box-shadow: none; /* Supprime les ombres */
         border: none; /* Supprime les bordures */
+        padding: 0; /* Élimine les marges internes */
     }
 
     .fb-widget iframe {
-        width: 90%; /* Adapte l'iframe à la largeur du conteneur */
-        height: 500px; /* Ajuste la hauteur pour un affichage optimal */
+         width: 100%; /* Adapte l'iframe à la largeur du conteneur */
+        height: 350px; /* Ajuste la hauteur pour un affichage plus compact */
         border-radius: 8px; /* Coins arrondis */
+        border: none; /* Supprime les bordures */
     }
 
     footer {
