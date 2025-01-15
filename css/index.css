@@ -220,42 +220,87 @@ footer {
 
 /* Mode paysage (petits écrans < 768px) */
 @media (max-width: 768px) and (orientation: landscape) {
+   @media (max-width: 768px) and (orientation: landscape) {
+    body {
+        font-size: 16px; /* Ajuste légèrement la taille globale du texte */
+    }
+
     header {
-        flex-direction: row;
-        height: auto;
-        padding: 5px;
+        flex-direction: row; /* Aligne les éléments horizontalement */
+        height: auto; /* Adapte la hauteur du header */
+        padding: 10px 15px; /* Réduit les marges intérieures */
+        justify-content: space-between; /* Espace entre les éléments */
+        align-items: center; /* Aligne verticalement */
     }
 
     header h1 {
-        font-size: 28px;
-        padding: 5px;
+        font-size: 28px; /* Taille réduite pour s'adapter à l'écran */
+        line-height: 1.2; /* Ajuste l'espacement vertical */
+        text-align: left; /* Alignement à gauche */
+        padding: 0;
+        margin: 0;
     }
 
     nav ul {
-        flex-direction: column; /* Menu horizontal en paysage */
-        justify-content: space-around;
+        flex-direction: row; /* Menu en ligne */
+        justify-content: space-evenly; /* Espacement uniforme entre les liens */
+        padding: 0;
+        gap: 10px; /* Espace entre les items du menu */
+    }
+
+    nav ul li {
+        margin: 0; /* Supprime les marges supplémentaires */
     }
 
     main {
-        padding: 10px;
+        padding: 15px;
         margin: 10px auto;
     }
 
     main h1 {
-        font-size: 24px;
+        font-size: 24px; /* Taille ajustée pour titres principaux */
     }
 
     main p {
-        font-size: 12px;
+        font-size: 14px; /* Taille de paragraphe réduite */
+        line-height: 1.5;
+        text-align: justify; /* Meilleure lisibilité en paysage */
+    }
+
+    .main-content {
+        flex-direction: row; /* Affiche les sections côte à côte */
+        gap: 20px; /* Espace entre la vidéo et le widget Facebook */
+        align-items: flex-start; /* Aligne en haut */
+    }
+
+    .video-container {
+        flex: 3; /* La vidéo prend plus d'espace */
+        max-width: 65%; /* Adapte la largeur à 65% */
+        text-align: center;
     }
 
     .video-container video {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Adapte la vidéo à la largeur de son conteneur */
+        height: auto; /* Maintient les proportions */
+        border: 1px solid #fff; /* Bordure blanche fine */
+    }
+
+    .fb-widget {
+        flex: 2; /* Le widget Facebook occupe un espace plus réduit */
+        max-width: 30%; /* Adapte la largeur à 30% */
+        text-align: center;
+        padding: 5px; /* Réduit les marges internes */
+    }
+
+    .fb-widget iframe {
+        height: 500px; /* Adapte la hauteur du widget en paysage */
+        border-radius: 8px; /* Coins arrondis */
     }
 
     footer {
-        font-size: 12px;
-        padding: 5px;
+        font-size: 14px; /* Taille du texte ajustée */
+        padding: 10px; /* Espacement pour le footer */
+        text-align: center;
     }
 }
+
