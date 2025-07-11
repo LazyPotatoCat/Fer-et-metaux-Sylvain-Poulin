@@ -297,7 +297,11 @@ input[name="city"] {
         max-height: 200px; /* Limite la hauteur maximale */
         overflow: hidden; /* Cache le contenu qui dépasse, si nécessaire */
         position: relative; /* Assurez-vous que z-index fonctionne */
-          z-index: 10;
+         z-index: 10;
+         display: flex;
+         flex-direction: column;
+         align-items: center; /* Centre le contenu horizontalement */
+         justify-content: center;
         
     }
 
@@ -340,12 +344,19 @@ input[name="city"] {
         cursor: pointer;
         font-size: 16px;
         transition: background-color 0.3s;
-        width: 100%; /* Assure que le bouton couvre toute la largeur */
+        margin-top: 15px;
+        align-self: center;
+        width: auto;
     }
 
     form input[type="submit"]:hover {
         background-color: #d80e0e;
     }
+    .facebook-icon {
+    display: block;
+    margin: 20px auto 0 auto; /* Centre horizontalement */
+    filter: brightness(1.2);
+}
 
     footer {
         font-size: 12px;
@@ -425,6 +436,10 @@ input[name="city"] {
         position: relative; /* Assurez-vous que z-index fonctionne */
           z-index: 10;
          margin-bottom: 10px; /* Crée un espace avec la carte */
+        display: flex;
+         flex-direction: column;
+          align-items: center;
+          justify-content: center;
     }
 
     .contact-info span {
@@ -466,12 +481,19 @@ input[name="city"] {
         cursor: pointer;
         font-size: 16px;
         transition: background-color 0.3s;
-        width: 100%; /* Assure que le bouton couvre toute la largeur */
+        margin-top: 15px;
+         align-self: center;
+         width: auto;
     }
 
     form input[type="submit"]:hover {
         background-color: #d80e0e;
     }
+    .facebook-icon {
+    display: block;
+    margin: 20px auto 0 auto;
+    filter: brightness(1.2);
+}
 
     footer {
         font-size: 12px;
