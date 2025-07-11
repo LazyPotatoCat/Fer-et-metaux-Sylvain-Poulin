@@ -298,7 +298,6 @@ input[name="city"] {
         overflow: hidden; /* Cache le contenu qui dépasse, si nécessaire */
         position: relative; /* Assurez-vous que z-index fonctionne */
           z-index: 10;
-         z-index: 10;
     }
 
     .contact-info span {
