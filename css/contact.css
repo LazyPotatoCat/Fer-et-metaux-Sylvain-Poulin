@@ -326,7 +326,7 @@ input[name="city"] {
         margin-bottom: 15px;
         border: 1px solid #e60f0f;
         border-radius: 4px;
-        font-size: 16px;
+        font-size: 12px;
     }
 
     form input[type="submit"] {
@@ -336,7 +336,7 @@ input[name="city"] {
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 12px;
         transition: background-color 0.3s;
         width: 100%; /* Assure que le bouton couvre toute la largeur */
     }
@@ -412,14 +412,13 @@ input[name="city"] {
         color: #e0e0e0; /* Couleur de texte claire et lisible */
         font-family: Arial, sans-serif; /* Police propre et moderne */
         text-align: center; /* Texte centré */
-        font-size: 16px; /* Taille de texte agréable */
+        font-size: 12px; /* Taille de texte agréable */
         line-height: 1.5; /* Espacement entre les lignes */
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ombre douce pour séparer le bloc du fond */
         width: 90%; /* Largeur adaptée à l'écran du téléphone */
         max-width: 500px; /* Limite la taille sur les écrans plus grands */
         height: auto; /* La hauteur s'adapte au contenu */
         max-height: 200px; /* Limite la hauteur maximale */
-        overflow: hidden; /* Cache le contenu qui dépasse, si nécessaire */
         position: relative; /* Assurez-vous que z-index fonctionne */
           z-index: 10;
         margin-bottom: 10px;
